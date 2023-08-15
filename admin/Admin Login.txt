@@ -1,0 +1,3 @@
+Go to admin dashboard: http://localhost/fooddelivery/admin
+Username: admin
+Password: a@12345

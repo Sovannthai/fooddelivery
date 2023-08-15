@@ -15,7 +15,7 @@ if (empty($_SESSION["adm_id"])) {
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Admin Panel</title>
+        <title>Admin Dashboard</title>
         <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
         <link href="css/helper.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
@@ -72,7 +72,7 @@ if (empty($_SESSION["adm_id"])) {
                             </li>
                             <li class="nav-label">Log</li>
                             <li> <a href="all_users.php"> <span><i class="fa fa-user f-s-20 "></i></span><span>Users</span></a></li>
-                            <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Restaurant</span></a>
+                            <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-dark"></i><span class="hide-menu">Restaurant</span></a>
                                 <ul aria-expanded="false" class="collapse">
                                     <li><a href="all_restaurant.php">All Restaurant</a></li>
                                     <li><a href="add_category.php">Add Category</a></li>

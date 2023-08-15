@@ -40,14 +40,11 @@ session_start();
                             echo '<li class="nav-item"><a href="login.php" class="nav-link active">Login</a> </li>
 							  <li class="nav-item"><a href="registration.php" class="nav-link active">Register</a> </li>';
                         } else {
-
-
                             echo  '<li class="nav-item"><a href="your_orders.php" class="nav-link active">My Orders</a> </li>';
                             echo  '<li class="nav-item"><a href="logout.php" class="nav-link active">Logout</a> </li>';
                         }
 
                         ?>
-
                     </ul>
 
                 </div>
@@ -105,7 +102,7 @@ session_start();
     <section class="popular">
         <div class="container">
             <div class="title text-xs-center m-b-30">
-                <h2>Popular Dishes</h2>
+                <h2>Popular Food</h2>
                 <p class="lead">Here's Best and Favorite in Our Restaurant...!</p>
             </div>
             <div class="row">
@@ -114,22 +111,32 @@ session_start();
                 $query_res = mysqli_query($db, "select * from dishes LIMIT 9");
                 while ($r = mysqli_fetch_array($query_res)) {
 
-                    echo '  <div class="col-xs-12 col-sm-6 col-md-4 food-item">
-                                            <div class="food-item-wrap">
-                                                <div class="figure-wrap bg-image" data-image-src="admin/Res_img/dishes/' . $r['img'] . '"></div>
-                                                <div class="content">
-                                                    <h5><a href="dishes.php?res_id=' . $r['rs_id'] . '">' . $r['title'] . '</a></h5>
-                                                    <div class="product-name">' . $r['slogan'] . '</div>
-                                                    <div class="price-btn-block"> <span class="price">$' . $r['price'] . '</span> <a href="dishes.php?res_id=' . $r['rs_id'] . '" class="btn theme-btn-dash pull-right">Order Now</a> </div>
+                    echo '  <div class="col-xs-12 col-sm-6 col-md-4 food-item ">
+                                                <div class="food-item-wrap">
+                                                    <div class="figure-wrap bg-image" data-image-src="admin/Res_img/dishes/' . $r['img'] . '"></div>
+                                                    <div class="content">
+                                                        <h5><a href="dishes.php?res_id=' . $r['rs_id'] . '">' . $r['title'] . '</a></h5>
+                                                        <div class="product-name">' . $r['slogan'] . '</div>
+                                                        <div class="price-btn-block"> <span class="price">$' . $r['price'] . '</span> <a href="dishes.php?res_id=' . $r['rs_id'] . '" class="btn theme-btn-dash pull-right">Order Now</a> </div>
+                                                    </div>
+                                                    
                                                 </div>
-                                                
-                                            </div>
-                                    </div>';
+                                        </div>';
                 }
                 ?>
             </div>
         </div>
     </section>
+    <style>
+.food-item .food-item-wrap:hover {
+  background-color: #999999;
+}
+.food-item .food-item-wrap .food-item-a {
+  display: block;
+  width: 100%;
+  height: 100%; 
+}
+</style>
 
     <section class="how-it-works">
         <div class="container">
@@ -162,7 +169,7 @@ session_start();
                                     </g>
                                 </svg>
                             </div>
-                            <h3>Choose a dish</h3>
+                            <h3>Choose a Food</h3>
                             <p>We"ve got your covered with a variety of delivery restaurants online.</p>
                         </div>
                     </div>
@@ -190,22 +197,22 @@ session_start();
     <section class="featured-restaurants">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
-                    <div class="title-block pull-left">
-                        <h4>Featured Restaurants</h4>
+                <div class="col-sm-8">
+                    <div class="title-block pull-right">
+                        <h4 style="font-size: 40px;">Featured Restaurants</h4>
                     </div>
                 </div>
                 <div class="col-sm-8">
                     <div class="restaurants-filter pull-right">
                         <nav class="primary pull-left">
                             <ul class="filters">
-                                <li><a href="#" class="selected" data-filter="*">all</a> </li>
+                                <li><a href="#" class="selected" data-filter="*"></a> </li>
                                 <?php
-                                $res = mysqli_query($db, "select * from res_category ");
-                                while ($row = mysqli_fetch_array($res)) {
-                                    // echo '<li><a href="?category_id=" . data-filter=".' . $row['c_id'] . '"> ' . $row['c_name'] . '</a> </li>';
-                                    echo "<li><a href='dishes.php?id=" . $row['c_id'] . "'>" . $row['c_name'] . "</a> " . "</li>";
-                                }
+                                // $res = mysqli_query($db, "select * from res_category ");
+                                // while ($row = mysqli_fetch_array($res)) {
+                                //     echo '<li><a href="?category_id=" . data-filter=".' . $row['c_id'] . '"> ' . $row['c_name'] . '</a> </li>';
+                                //     // echo "<li><a href='dishes.php?id=" . $row['c_id'] . "'>" . $row['c_name'] . "</a> " . "</li>";
+                                // }
                                 ?>
                             </ul>
                         </nav>

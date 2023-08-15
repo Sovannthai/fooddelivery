@@ -273,7 +273,8 @@
                                                         <div class="col-md-6">
                                                             <div class="form-group has-danger">
                                                                 <label class="control-label">Image</label>
-                                                                <input type="file" name="file" id="lastName" class="form-control form-control-danger" placeholder="12n">
+                                                                <input type="file" name="file
+                                                                " id="lastName" class="form-control form-control-danger" placeholder="12n">
                                                             </div>
                                                         </div>
 

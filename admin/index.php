@@ -53,8 +53,14 @@ if (isset($_POST['submit'])) {
     <div class="form">
         <div class="thumbnail"><img src="images/manager.png" /></div>
         <form class="login-form" action="index.php" method="post">
+            <div class="lb">
+            <label for="username" >Username</label>
             <input type="text" placeholder="Username" name="username" />
+            </div>
+            <div class="lb">
+            <label for="password" style="text-align: right;">Password</label>
             <input type="password" placeholder="Password" name="password" />
+            </div>
             <input type="submit" name="submit" value="Login" />
 
         </form>

@@ -1,12 +1,3 @@
-/*!
- *  Author Name: MH RONY.
- *  GigHub Link: https://github.com/dev-mhrony
- *  Facebook Link:https://www.facebook.com/dev.mhrony
- *  Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
-    for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@gmail.com  
- *  Visit My Website : developerrony.com 
-
-      */ /* Form */
 .form {
   position: relative;
   z-index: 1;
@@ -65,7 +56,7 @@
   transition: all 0.3 ease;
   cursor: pointer;
 }
-.form button {
+/* .form button {
   outline: 0;
   background: #5c4ac7;
   width: 100%;
@@ -91,7 +82,7 @@
 }
 .form .register-form {
   display: none;
-}
+} */
 
 .container {
   position: relative;
@@ -158,4 +149,12 @@ body:before {
   height: auto;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
+}
+.lb{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items:flex-start; 
+  display:flex; 
+  flex-direction:column; 
+  gap:10px
 }

@@ -1033,6 +1033,7 @@ h6.h1 {
 .header .top-navbar {
   min-height: 50px;
   padding: 0 15px 0 0;
+  background-color: cornflowerblue;
 }
 .header .top-navbar .dropdown-toggle:after {
   display: none;
@@ -1040,7 +1041,7 @@ h6.h1 {
 .header .top-navbar .navbar-header {
   line-height: 45px;
   text-align: center;
-  background: #fff;
+  background-color:#67757c;
 }
 .header .top-navbar .navbar-header .navbar-brand {
   margin-right: 0;
@@ -7049,3 +7050,10 @@ tbody tr td:last-child {
     display: inline-block !important;
   }
 }
+.lb{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items:flex-start; 
+  display:flex;
+}
+

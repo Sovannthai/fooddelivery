@@ -59,8 +59,6 @@
                         }
 
                         ?>
-
-
                     </ul>
                 </div>
             </div>
@@ -105,9 +103,16 @@
                         <span style="color:red;"><?php echo $message; ?></span>
                         <span style="color:green;"><?php echo $success; ?></span>
                         <form action="" method="post">
-                            <input type="text" placeholder="Username" name="username" />
-                            <input type="password" placeholder="Password" name="password" />
-                            <input type="submit" id="buttn" name="submit" value="Login" />
+                            <div class="lb">
+                                <label for="Username">Username</label>
+                                <input type="text" placeholder="Username" name="username" />
+                            </div>
+                            <div class="lb"> 
+                                <label for="password">Password</label>                               
+                                <input type="password" placeholder="Password" name="password" />
+                            </div>
+
+                                <input type="submit" id="buttn" name="submit" value="Login" />
                         </form>
                     </div>
 
@@ -115,22 +120,11 @@
                             account</a></div>
                 </div>
                 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-
-
-
-
                 <div class="container-fluid pt-3">
                     <p></p>
-                </div>
+             </div>
 
-
-
-                <?php include "include/footer.php" ?>
-
-
-
-
+         <?php include "include/footer.php" ?>
 </body>
 
 </html>

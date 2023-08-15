@@ -114,7 +114,7 @@ if (isset($_POST['submit'])) {
                         <div class="col-md-12">
                             <div class="widget">
                                 <div class="widget-body">
-
+                                <h1>Let's Create your account...!</h1>
                                     <form action="" method="post">
                                         <div class="row">
                                             <div class="form-group col-sm-12">
